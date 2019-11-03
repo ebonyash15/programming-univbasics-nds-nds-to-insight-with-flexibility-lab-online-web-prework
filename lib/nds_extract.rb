@@ -56,7 +56,7 @@ def gross_per_studio(collection)
   # each studio.
   # INPUT:
   # * collection: Array of Hashes where each Hash where each Hash represents a movie
-  
+
   # RETURN:
   gross = {}
   # Hash whose keys are the studio names and whose values are the sum
