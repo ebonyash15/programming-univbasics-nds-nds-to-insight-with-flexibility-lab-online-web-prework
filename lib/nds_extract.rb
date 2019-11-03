@@ -25,19 +25,19 @@ def movie_with_director_name(director_name, movie_data)
 end
 
 def movies_with_director_key(name, movies_collection)
-  director_key = []
+  updated_movies = [] 
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key.
   interval = 0
 while interval < movies_collection.size do
     movies_collection[:director_name] = name
-      director_key[interval] << { :title => movies_collection[:title],
+      updated_movies[interval] << { :title => movies_collection[:title],
       :worldwide_gross => movies_collection[:worldwide_gross],
       :release_year => movies_collection[:release_year],
       :studio => movies_collection[:studio],
       :director_name => movies_collection[:director_name] }
     interval += 1
-    p director_key
+    p updated_movies
 end
 p director_key
 end
