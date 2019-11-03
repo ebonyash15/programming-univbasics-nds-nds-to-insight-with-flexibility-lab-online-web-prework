@@ -25,7 +25,7 @@ def movie_with_director_name(director_name, movie_data)
 end
 
 def movies_with_director_key(name, movies_collection)
-  updated_movies = [] 
+  updated_movies = []
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key.
   interval = 0
