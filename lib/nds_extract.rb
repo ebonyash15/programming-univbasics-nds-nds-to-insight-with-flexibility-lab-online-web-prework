@@ -39,11 +39,12 @@ def movies_with_director_key(name, movies_collection)
   # movie_with_director_name method
   interval = 0
 while interval < movies_collection.size do
+    movies_collection[:director_name] = name
       director_key[interval] << { :title => movies_collection[:title],
       :worldwide_gross => movies_collection[:worldwide_gross],
       :release_year => movies_collection[:release_year],
       :studio => movies_collection[:studio],
-      :director_name => name }
+      :director_name => movies_collection[:director_name] }
     interval += 1
 end
 p director_key
