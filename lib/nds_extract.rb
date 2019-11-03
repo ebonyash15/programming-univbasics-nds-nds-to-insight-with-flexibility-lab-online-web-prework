@@ -31,11 +31,11 @@ def movies_with_director_key(name, movies_collection)
   interval = 0
 while interval < movies_collection.size do
     movies_collection[:director_name] = name
-      updated_movies[interval] << { :title => movies_collection[:title],
-      :worldwide_gross => movies_collection[:worldwide_gross],
-      :release_year => movies_collection[:release_year],
-      :studio => movies_collection[:studio],
-      :director_name => movies_collection[:director_name] }
+      updated_movies[interval] << { :title => test_set[:title],
+      :worldwide_gross => test_set[:worldwide_gross],
+      :release_year => test_set[:release_year],
+      :studio => test_set[:studio],
+      :director_name => dir_name }
     interval += 1
 end
 p updated_movies
