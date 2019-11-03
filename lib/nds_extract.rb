@@ -37,9 +37,8 @@ while interval < movies_collection.size do
       :studio => movies_collection[:studio],
       :director_name => movies_collection[:director_name] }
     interval += 1
-    p updated_movies
 end
-p director_key
+p updated_movies
 end
 
 def gross_per_studio(collection)
